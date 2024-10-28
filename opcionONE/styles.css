@@ -1,0 +1,55 @@
+/* Estilos generales del footer */
+footer {
+    background-color: #D32F2F; /* Rojo oscuro */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Título de la sección */
+footer h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de convenios y alianzas */
+.convenios-alianzas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada bloque de convenio */
+.convenio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave al reposar el cursor */
+}
+
+/* Logo de cada convenio */
+.convenio img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Transición para el efecto de agrandado */
+}
+
+/* Animación de agrandado al pasar el cursor sobre el logo */
+.convenio img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
+/* Nombre de la institución */
+.convenio p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
